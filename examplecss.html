@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Example Ko Lang</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+<style type="text/css">
+/*div
+{
+width:100px;
+height:75px;
+background-color:red;
+border:1px solid black;
+}*/
+div#div2
+{
+transform:rotate(30deg);
+-moz-transform:rotate(30deg); /* Firefox */
+-webkit-transform:rotate(30deg); /* Safari and Chrome */
+-o-transform:rotate(30deg); /* Opera */
+}
+
+
+div#radius
+{
+border:2px solid;
+-moz-border-radius:25px; /* Firefox */
+border-radius:25px;
+}
+
+div#shadow
+{
+-moz-box-shadow: 10px 10px 5px #888888; /* Firefox */
+-webkit-box-shadow: 10px 10px 5px #888888; /* Safari and Chrome */
+box-shadow: 10px 10px 5px #888888;
+}
+
+
+div#image
+{
+-moz-border-image:url(border.png) 70 70 round; /* Firefox */
+-webkit-border-image:url(border.png) 70 70 round; /* Safari and Chrome */
+border-image:url(img/admin.png) 70 70 round;
+}
+
+div#size1
+{
+background:url(img/admin.png);
+-moz-background-size:80px 60px; /* Firefox */
+background-size:80px 60px;
+background-repeat:no-repeat;
+}
+
+div#size2
+{
+background:url(img/admin.png);
+-moz-background-size:100% 100%; /* Firefox */
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+
+div#origin
+{
+background:url(img/admin.png);
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-origin:content-box;
+}
+
+h1
+{
+text-shadow: 5px 5px 5px #FF0000;
+}
+p {word-wrap:break-word;}
+div#twoD:hover
+{
+transition: width 1s linear 2s;
+-webkit-transition: width 1s linear 2s; /*Safari and Chrome: */
+-o-transition: width 1s linear 2s; /*Opera: */
+}
+
+div#animate1
+{
+animation: myfirst 5s;
+-webkit-animation: myfirst 5s; /* Safari and Chrome */
+}
+
+div#animate2{
+-moz-column-rule:3px outset #ff00ff; /* Firefox */
+-webkit-column-rule:3px outset #ff00ff; /* Safari and Chrome */
+column-rule:3px outset #ff00ff;
+}
+
+div#resize
+{
+resize:both;
+overflow:auto;
+}
+
+div#boxsizing
+{
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari and Chrome */
+width:50%;
+float:left;
+}
+
+div#outline
+{
+border:2px solid black;
+outline:2px solid red;
+outline-offset:15px;
+}
+div#borderleft{
+border:2px solid;
+-moz-border-top-left-radius:2em; /* Firefox */
+-webkit-border-top-left-radius:2em; /* Safari and Chrome */
+border-top-left-radius:2em;
+}
+</style>
+</head>
+
+<body>
+<p><b>Note:</b> Internet Explorer does not support the transform property.</p>
+<div>Hello. This is a DIV element.</div>
+<div id="div2">Hello. This is a DIV element.</div>
+<div id="radius">Hello. This is a DIV element.</div>
+<div id="shadow">Hello. This is a DIV element.</div>
+<div id="image">Hello. This is a DIV element.</div>
+<div id="size1">Hello. This is a DIV element.</div>
+<div id="size2">Hello. This is a DIV element.</div>
+<div id="origin">Hello. This is a DIV element.</div>
+<h1>Hello. This is a DIV element.</h1>
+<p>Hello. This is a DIV element.Hello. This is a DIV element.Hello. This is a DIV element.Hello. This is a DIV element.</p>
+<div id="twoD">Hello. This is a DIV element.</div>
+<div  class="animate1">Hello. This is a DIV element.</div>
+<div  class="animate2">Hello. This is a DIV element.</div>
+<div  class="resize">Hello. This is a DIV element.</div>
+<div  class="boxsizing">Hello. This is a DIV element.</div>
+<div  class="outline">Hello. This is a DIV element.</div>
+<div  class="borderleft">Hello. This is a DIV element.</div>
+<p>
+We open at <time>10:00</time> every morning.
+</p>
+
+<p>
+I have a date on <time datetime="2008-02-14">Valentines day</time>
+</p>
+
+
+<p>My family and I visited The Epcot center this summer.</p>
+<aside>
+<h4>Epcot Center</h4>
+The Epcot Center is a theme park in Disney World, Florida.
+</aside>
+
+
+Here is a quote from WWF's website:
+<blockquote cite="http://www.wwf.org">
+WWF's ultimate goal is to build a future where people live in harmony with nature.
+</blockquote>
+
+
+Points: <input type="number" name="points" min="1" max="10" /><br>
+Points with step 3: <input type="number" name="points" min="0" max="10" step="3" /><br>
+Homepage: <input type="url" name="user_url" /><br>
+Range<input type="range" name="points" min="1" max="30" /><br>
+
+
+Select image: <input type="file" name="img" multiple="multiple" /><br>
+Country code: <input type="text" name="country_code"
+pattern="[A-z]{3}" title="Three letter country code" /><br>
+
+Search<input type="search" name="user_search"  placeholder="Search W3Schools" /><br>
+
+Date: <input type="date" name="user_date" /><br>
+elephone: <input type="telephone" name="user_date" /><br>
+
+Month: <input type= "month" name="user_date" /><br>
+
+Week: <input type="week" name="user_date" /><br>
+
+Time: <input type="time" name="user_date" /><br>
+
+DateTime: <input type="datetime" name="user_date" /><br>
+DateTime Local: <input type="datetime-local" name="user_date" /><br>
+
+Color: <input type="color" name="user_color" /><br>
+
+Search: <input type="search"  /><br>
+
+
+Webpage: <input type="url" list="url_list" name="link" />
+<datalist id="url_list">
+<option label="W3Schools" value="http://www.w3schools.com" />
+<option label="Google" value="http://www.google.com" />
+<option label="Microsoft" value="http://www.microsoft.com" />
+</datalist>
+
+
+
+<form action="demo_form.asp" method="get" autocomplete="on">
+First name: <input type="text" name="fname" /><br />
+Last name: <input type="text" name="lname" /><br />
+E-mail: <input type="email" name="email" autocomplete="off" /><br />
+<input type="submit" />
+</form>
+
+User name Auto Focus: <input type="text" name="user_name"  autofocus="autofocus" />
+
+Input Image<input type="image" src="img/admin.png" width="24" height="24" /><br>
+
+Command:<menu>
+<command onclick="alert('Hello World')">
+Click Me!</command>
+</menu>
+<br>
+
+Fieldset:
+<form>
+  <fieldset>
+    <legend>Personalia:</legend>
+    Name: <input type="text" /><br />
+    Email: <input type="text" /><br />
+    Date of birth: <input type="text" />
+  </fieldset>
+</form><br>
+
+Mark Text:
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+        <!-- jQuery -->
+        <script src="bootstrap/js/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="bootstrap/js/bootstrap.js"></script>
+    </body>
+</html>

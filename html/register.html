@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+
+</head>
+<body>
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Register User</h4>
+      </div>
+<div class="modal-body">
+<div class="row">
+   <div class="form-group col-sm-12 ">
+    <label for="inputEmail" class="control-label col-xs-2">Email</label>
+     <div class="form-group col-xs-10 has-feedback">
+    <input type="email" class="form-control" id="inputEmail"   name="regemail" placeholder="Email" data-error="Wooh, that email address is invalid" required >
+     <span class="fa form-control-feedback" aria-hidden="true"></span>
+    <div class="help-block with-errors"></div>
+  </div>
+  </div>
+
+
+
+  <div class="form-group col-sm-12">
+    <label for="inputPassword" class="control-label col-xs-2">Password</label>
+    <div class="form-group col-xs-10 has-feedback">
+      <input type="password" data-minlength="6" class="form-control" name="regpassword" id="inputPassword" placeholder="Password" required>
+      <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+      <div class="help-block">Minimum of 6 characters</div>
+    </div>
+
+
+    <label for="confirmPassword" class="control-label col-xs-2"><i>Confirm Password</i></label>
+    <div class="form-group col-xs-10 has-feedback">
+      <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+      <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+</div>
+</div>
+          <div class="modal-footer">
+               <div class="col-sm-6 text-left">
+                  <p for="newmember"><a href="login.html" data-target="#login" data-toggle="modal" data-dismiss="modal">I already have an account</a></p>
+                </div>
+                    <div class="form-group">
+                       <div class=" col-xs-12">
+                          <button type="submit" class="btn btn-primary" name="regusersubmit" >Submit</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+          </div>
+
+
+<script src="../bootstrap/js/validator.min.js"></script>
+<script>
+  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
+</script>
+
+
+</body>
+</html>
